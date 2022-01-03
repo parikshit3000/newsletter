@@ -35,10 +35,10 @@ app.post("/", (req, res) => {
         ]
     };
     var jsonData = JSON.stringify(data);
-    const url = "https://us20.api.mailchimp.com/3.0/lists/process.env.LID";
+    const url = "https://us20.api.mailchimp.com/3.0/lists/"+ process.env.LID;
     const options = {
         method: "POST",
-        auth: "parikshit:process.env.APIKEY"
+        auth: "parikshit:" + process.env.APIKEY
     };
 
     const request = https.request(url, options, function(response) {
@@ -62,6 +62,3 @@ app.post("/", (req, res) => {
 app.post("/failure", function(req, res) {
     res.redirect("/");
 });
-
-// 0603b08d69216c0ee533dd711e1dd19f-us20
-// 98cd34d7f3
