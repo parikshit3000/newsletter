@@ -1,2 +1,2 @@
 # newsletter
-https://fathomless-spire-17455.herokuapp.com/
+https://safe-crag-24259.herokuapp.com/
